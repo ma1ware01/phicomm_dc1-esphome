@@ -23,6 +23,7 @@ jobs:
     - name: Initializing environment
       env:
         DEBIAN_FRONTEND: noninteractive
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       run: |
         pip3 install setuptools wheel
         pip3 install esphome
